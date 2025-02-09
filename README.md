@@ -73,3 +73,7 @@ Data persistence using SQLite or Firebase
 📧 Contact
 
 For any queries, reach out to: patildvinayak@gmail.com
+![SS1](https://github.com/user-attachments/assets/9781dcdd-9e54-49db-9a45-edda734445f6)
+![SS2](https://github.com/user-attachments/assets/d97430a0-732c-4f26-838f-cd8da4f47d51)
+![SS3](https://github.com/user-attachments/assets/64e1c645-dc60-412e-8793-6997e38d11db)
+
