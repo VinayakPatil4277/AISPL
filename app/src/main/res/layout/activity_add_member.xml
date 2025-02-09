@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/white">
+
+        <!-- Member Mobile Number -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Member Mobile Number"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="15dp"/>
+        <EditText
+            android:id="@+id/mobileNumberInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Member Mobile Number"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:padding="12dp"
+            android:background="@drawable/edittext_bg"/>
+
+        <!-- Member Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Member Name"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="15dp"/>
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Member Name"
+            android:padding="12dp"
+            android:background="@drawable/edittext_bg"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Select Role -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Role"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="15dp"/>
+
+        <RadioGroup
+            android:id="@+id/roleGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/role_secretary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Secretary"
+                android:padding="8dp"/>
+
+            <RadioButton
+                android:id="@+id/role_member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Member"
+                android:padding="8dp"/>
+        </RadioGroup>
+
+        <!-- Financial Inputs -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Subscription Fee"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="15dp"/>
+        <EditText
+            android:id="@+id/subscriptionFeeInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subscription Fee"
+            android:inputType="number"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Deposit Amount"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/depositAmountInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Deposit Amount"
+            android:inputType="number"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Loan Amount"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/loanAmountInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Loan Amount"
+            android:inputType="number"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"/>
+
+        <!-- Gender Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="15dp"/>
+
+        <RadioGroup
+            android:id="@+id/genderGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/genderMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:padding="8dp"/>
+
+            <RadioButton
+                android:id="@+id/genderFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:padding="8dp"/>
+
+            <RadioButton
+                android:id="@+id/genderOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:padding="8dp"/>
+        </RadioGroup>
+
+        <!-- Date Fields -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth (dd/mm/yyyy)"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="15dp"/>
+
+        <!-- Date of Birth Input -->
+        <EditText
+            android:id="@+id/dobInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DD/MM/YYYY"
+            android:maxLength="10"
+            android:padding="12dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_bg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Joining (dd/mm/yyyy)"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/dateOfJoiningInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DD/MM/YYYY"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"/>
+
+        <!-- Marital Status -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marital Status"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="15dp"/>
+
+        <RadioGroup
+            android:id="@+id/maritalStatusGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/married"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Married"
+                android:padding="8dp"/>
+
+            <RadioButton
+                android:id="@+id/unmarried"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unmarried"
+                android:padding="8dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Marriage (dd/mm/yyyy)"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/dateOfMarriageInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DD/MM/YYYY"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"/>
+
+        <!-- Additional Details -->
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/casteInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Caste"
+                android:padding="12dp"
+                android:background="@drawable/edittext_bg"/>
+
+            <EditText
+                android:id="@+id/religionInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Religion"
+                android:padding="12dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/edittext_bg"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/categoryInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Category"
+                android:padding="12dp"
+                android:background="@drawable/edittext_bg"/>
+
+            <EditText
+                android:id="@+id/aadharInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Aadhar No."
+                android:inputType="number"
+                android:maxLength="12"
+                android:padding="12dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/edittext_bg"/>
+        </LinearLayout>-->
+
+        <!-- Caste & Religion Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="15dp">
+
+            <!-- Caste Section -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Caste"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="5dp"/>
+
+                <EditText
+                    android:id="@+id/casteInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Caste"
+                    android:padding="12dp"
+                    android:background="@drawable/edittext_bg"/>
+            </LinearLayout>
+
+            <!-- Religion Section -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Religion"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="5dp"/>
+
+                <EditText
+                    android:id="@+id/religionInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Religion"
+                    android:padding="12dp"
+                    android:background="@drawable/edittext_bg"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Category & Aadhar Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="15dp">
+
+            <!-- Category Section -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Category"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="5dp"/>
+
+                <EditText
+                    android:id="@+id/categoryInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Category"
+                    android:padding="12dp"
+                    android:background="@drawable/edittext_bg"/>
+            </LinearLayout>
+
+            <!-- Aadhar Section -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aadhar No."
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="5dp"/>
+
+                <EditText
+                    android:id="@+id/aadharInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Aadhar No."
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:padding="12dp"
+                    android:background="@drawable/edittext_bg"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#03A9F4"
+            android:drawablePadding="8dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingVertical="12dp"
+            android:paddingHorizontal="24dp"
+            android:text="Submit"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:elevation="4dp"
+            android:stateListAnimator="@null" />
+
+    </LinearLayout>
+</ScrollView>
